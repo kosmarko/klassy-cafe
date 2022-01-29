@@ -1,11 +1,3 @@
-/* .dropdown:hover > .dropdown-menu {
-  display: block;
-} */
-
-/* html {
-  scroll-padding-top: 95px;
-  } */
-
 body {
   font-family: 'Poppins', sans-serif;
   position: relative;
@@ -22,7 +14,6 @@ body {
 .navbar {
   padding: 20px 0;
   background-color: white;
-  /* padding: 0 !important; kada zelim da bude u okviru navbara  */
 }
 .navbar li a {
   color: #2d2d30 !important;
@@ -61,8 +52,6 @@ body {
   background-color: white;
   padding: 8px 20px;
   color: rgb(231, 74, 12);
-  /*ako stavim grid moram da fiksiram width na btn*/
-  /* width: 180px;  */
   margin-top: 10px;
   font-size: small;
   font-weight: bold;
@@ -83,10 +72,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*ako koristim grid umesto flex*/
-  /* display: grid;
-  justify-content: center;
-  align-content: center; */
 }
 .home_left h1 {
   font-family: 'Dancing Script', cursive;
@@ -131,14 +116,13 @@ body {
   letter-spacing: 2px;
   padding-left: 45px;
 }
-/*kopirao sam iz inspecta*/
 .about-us__h6::before,
 .our-menu__h6::before {
   width: 30px;
   height: 1px;
   content: '';
   position: absolute;
-  left: 15px; /*pomerio sam u levo jer je padding parenta(about-us_left) 15px*/
+  left: 15px; 
   top: 9px;
   background-color: #fb5849;
 }
@@ -272,19 +256,11 @@ body {
 }
 
 .card .info {
-  /* transform: translateY(0);
-  -webkit-transition: 0.25s linear;
-  -moz-transition: 0.25s linear;
-  transition: 0.3s linear; */
   animation: move-out-info 0.4s ease-in-out;
   animation-fill-mode: forwards;
 }
 
 .card:hover .info {
-  /* transform: translateY(-116.391px);
-  -webkit-transition: 0.25s linear;
-  -moz-transition: 0.25s linear;
-  transition: 0.3s linear; */
   animation: move-in-info 0.4s ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -304,10 +280,6 @@ body {
 .chefs-card .chefs-img {
   position: relative;
   padding: 5px;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; */
 }
 
 .chefs-card .chefs-overlay {

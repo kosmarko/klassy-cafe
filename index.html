@@ -403,8 +403,6 @@
                 </div>
               </div>
             </div>
-            <!-- stavio sam col-lg-5 kako bih smanjio contact formu i mogao da dodam inline marginu -->
-            <!-- zato treba da stavim div ispod col-lg-6 kako bih oduzimao od paddinga, a ne od margina(jer zeza responsive) -->
             <div class="col-lg-5 contact-us_right">
               <h4>Table Reservation</h4>
               <form action="#" class="needs-validation">
@@ -968,32 +966,24 @@
     </script>
     <script>
       $(document).ready(function () {
-        // Add scrollspy to <body>
         $('body').scrollspy({ target: '.navbar', offset: 50 });
 
-        // Add smooth scrolling on all links inside the navbar
         $('#collapsibleNavbar a, #menu a ').on('click', function (event) {
-          // Make sure this.hash has a value before overriding default behavior
           if (this.hash !== '') {
-            // Prevent default anchor click behavior
             event.preventDefault();
 
-            // Store hash
             var hash = this.hash;
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate(
               {
                 scrollTop: $(hash).offset().top,
               },
               800,
               function () {
-                // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
               }
             );
-          } // End if
+          } 
         });
       });
     </script>
